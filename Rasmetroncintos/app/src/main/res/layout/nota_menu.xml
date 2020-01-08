@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+        android:id="@+id/cambiarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Cambiar de Perfil" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite"
+            />
+
+        <TextView
+            android:id="@+id/crearSolicitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Solicitud"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/consultarSolicitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar Solicitudes"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorWhite"
+            />
+        <TextView
+            android:id="@+id/cerrarseccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cerrar Sesión"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

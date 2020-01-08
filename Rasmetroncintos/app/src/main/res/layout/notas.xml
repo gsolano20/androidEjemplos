@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/firtLayout"
+    android:background="@drawable/img">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/relativeHeader"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fomulariologin"
+            android:elevation="9dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/menu"
+            android:elevation="10dp"
+            android:text=""
+            android:onClick="openMenuSolicitudes"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/firtLayout"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/formulariomenu"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="Crear Nuevo "
+                android:textColor="@color/colorCeleste"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:onClick="openNewSolicitud"/>
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/add"
+                android:layout_marginRight="20dp"
+                android:elevation="8dp"
+                android:onClick="openNewSolicitud"/>
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Buscar Solicitud"
+                android:background="@drawable/nota_item"/>
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search"
+                android:elevation="8dp" />
+
+
+
+        </LinearLayout>
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lvSolicitudes"
+        android:layout_width="match_parent"
+        android:dividerHeight="10.0sp"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+        android:layout_weight="1" >
+        </com.baoyz.swipemenulistview.SwipeMenuListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

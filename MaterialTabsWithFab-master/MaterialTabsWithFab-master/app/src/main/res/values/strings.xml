@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MaterialTabsWithMenu</string>
+    <string name="toolbar_title">Music</string>
+    <string name="tab_item_0">LIBRARY</string>
+    <string name="tab_item_1">PLAYLIST</string>
+    <string name="tab_item_2">FAVORITES</string>
+    <string name="tab_item_3">HOME</string>
+</resources>

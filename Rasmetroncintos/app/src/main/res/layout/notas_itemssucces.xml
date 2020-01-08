@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondotransparente"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headerDialog"
+        android:background="@drawable/notas_item"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lyheader"
+            android:background="@drawable/headerdialogsucces">
+
+            <TextView
+                android:id="@+id/txtNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nota Recibida"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lybody"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTituloNota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nota"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/txtDescripcionNota"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="Texto de  Nota"
+                    android:inputType="textPassword"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/txtview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver Texto"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lyfooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Regresar"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btnsucces"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

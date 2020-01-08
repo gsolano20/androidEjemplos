@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d6fb7</color>
+    <color name="colorPrimaryDark">#1d6fb7</color>
+    <color name="colorAccent">#1d6fb7</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colormMenu">#F2F2F2</color>
+    <color name="colorWarnig">#F08227</color>
+    <color name="colorGreen">#8DC449</color>
+    <color name="colorRed">#BC1111</color>
+    <color name="colorCeleste">#00B6C2</color>
+
+</resources>

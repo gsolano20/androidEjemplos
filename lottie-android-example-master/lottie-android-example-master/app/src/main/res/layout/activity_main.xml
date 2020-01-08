@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.blueeagle.lottieexample.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_change_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="empty_status.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/btn_change_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/space_normal"
+        android:background="@drawable/selector_btn_round"
+        android:paddingLeft="@dimen/space_super_large"
+        android:paddingRight="@dimen/space_super_large"
+        android:text="@string/next_animation"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
