@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="time_wait_check">200</string>
+    <string name="time_check">200</string>
+
+    <string name="reload_message_1"><b>¡Ups!</b></string>
+    <string name="reload_message_2">Se a perdido la conexión</string>
+    // Tambien añadí la URL de la pagina a mostrar en el `WebView`
+    <string name="web_root">https://www.mipaginaweb.com/</string>
+
+    <string name="frag_web_root">mipaginaweb.com</string>
+</resources>
