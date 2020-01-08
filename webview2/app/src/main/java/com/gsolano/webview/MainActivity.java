@@ -251,7 +251,7 @@ public class MainActivity extends AppCompatActivity {
                                                 intent.setData(photoUri);
                                                 intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                                                 startActivity(intent);*/
-                                            
+
                                             } else {
                                                 intent = new Intent(Intent.ACTION_VIEW);
                                                 intent.setDataAndType(Uri.parse(filepath), "application/xls");
