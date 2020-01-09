@@ -11,31 +11,24 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private LottieAnimationView animationView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        animationView =(LottieAnimationView) findViewById(R.id.animation_view);
-        //animationView.setAnimationFromUrl("https://assets2.lottiefiles.com/packages/lf20_Lq6i91.json");
-        //animationView.setAnimationFromUrl("https://assets8.lottiefiles.com/packages/lf20_Ihv6OC.json");
-
-        animationView.playAnimation();
-
-        new android.os.Handler().postDelayed(
-
-                new Runnable() {
+        new android.os.Handler().postDelayed(new Runnable() {
                     public void run() {
-                        Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
-                        animationView.cancelAnimation();
-                        startActivity(mainActivity);
-                    }
-                },
-                5000);
+            Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+            mainActivity.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            //animationView.cancelAnimation();
+            //startActivity(mainActivity);
+
+            startActivityForResult(mainActivity, 0);
+            overridePendingTransition(0,0);
+        }
+        },500);
     }
 
     @Override

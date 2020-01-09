@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">webview</string>
+    <string name="app_name">Facturasff</string>
         <string name="msjCon"><b>¡Ups!</b></string>
         <string name="msjConnection">Se ha perdido la conexión, conéctese e intente de nuevo</string>
         <string name="time_wait_check">200</string>

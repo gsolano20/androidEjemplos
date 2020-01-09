@@ -52,5 +52,6 @@
         app:layout_constraintStart_toStartOf="@+id/layoutMainActivity"
         app:layout_constraintEnd_toEndOf="@+id/layoutMainActivity"
         app:layout_constraintTop_toBottomOf="@+id/tVMsjCon"/>
+    <include layout="@layout/activity_splash"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,13 @@
 package com.gsolano.webview;
 
+import android.Manifest;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.app.DownloadManager;
-import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -17,14 +18,9 @@ import android.text.Html;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.view.textclassifier.TextLinks;
-import android.webkit.CookieManager;
 import android.webkit.DownloadListener;
-import android.webkit.JavascriptInterface;
 import android.webkit.JsPromptResult;
 import android.webkit.JsResult;
-import android.webkit.PermissionRequest;
-import android.webkit.URLUtil;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
@@ -32,30 +28,32 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.FileProvider;
 
-import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
-import java.util.Random;
 import java.util.StringTokenizer;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.logging.Logger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     String url = "http://facturasff.com";
 
     private String filename = "Factura.pdf";
-    private String filenameExcel = "Factura.xls";
+    private String filenameExcel = "Factura.xlsx";
     private String filepath = "Documents";
     File myExternalFile;
     File myExternalFilexsl;
@@ -80,13 +78,15 @@ public class MainActivity extends AppCompatActivity {
     private AlertError AlertError;
 
     String base64;
+    RelativeLayout SplashLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        SplashLayout = findViewById(R.id.SplashLayout);
         context=this;
         webView = (WebView) findViewById(R.id.webViewUrl);
         imageConnect = (ImageView) findViewById(R.id.imgConexion);
@@ -122,9 +122,12 @@ public class MainActivity extends AppCompatActivity {
         if (!isExternalStorageAvailable() || isExternalStorageReadOnly()) {
             //saveButton.setEnabled(false);
         }else {
+
             myExternalFile = new File(getExternalFilesDir(filepath), filename);
             myExternalFilexsl = new File(getExternalFilesDir(filepath), filenameExcel);
         }
+        ActivityCompat.requestPermissions(MainActivity.this,  new String[] {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+
 
     }
 
@@ -174,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onDownloadStart(String url, String userAgent,
                                                 String contentDisposition, String mimeType,
                                                 long contentLength) {
+
 
                         if (url.startsWith("data:")) {
 
@@ -246,15 +250,38 @@ public class MainActivity extends AppCompatActivity {
                                                 File imagePath = new File(storageDir, "");
                                                 File image = new File(imagePath, filenameExcel);
 
-                                                /*Uri photoUri = FileProvider.getUriForFile(MainActivity.this, getPackageName() +".provider", image);
+                                                Uri photoUri = FileProvider.getUriForFile(MainActivity.this, getPackageName() +".provider", image);
+
+                                                PackageManager packageManager = getPackageManager();
                                                 intent = new Intent(Intent.ACTION_VIEW);
-                                                intent.setData(photoUri);
+                                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                                intent.setDataAndType(photoUri, "application/vnd.ms-excel");
                                                 intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                                                startActivity(intent);*/
+                                                intent = Intent.createChooser(intent, "Open File");
+                                                List list = packageManager.queryIntentActivities(intent,PackageManager.MATCH_DEFAULT_ONLY);
+
+                                                if (list.size() > 0) {
+                                                    try {
+                                                        startActivity(intent);
+                                                    } catch (ActivityNotFoundException e) {
+                                                        Toast.makeText(MainActivity.this, "Application not found", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }else{
+                                                    Toast.makeText(MainActivity.this, "No exiten aplicaciones para abrir el archivo", Toast.LENGTH_SHORT).show();
+                                                }
+                                               /* intent = new Intent(Intent.ACTION_VIEW);
+                                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                                intent.setDataAndType(photoUri, "application/vnd.ms-excel");
+                                                intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                                                try {
+                                                    startActivity(intent);
+                                                } catch (ActivityNotFoundException e) {
+                                                    Toast.makeText(MainActivity.this, "Application not found", Toast.LENGTH_SHORT).show();
+                                                }*/
 
                                             } else {
                                                 intent = new Intent(Intent.ACTION_VIEW);
-                                                intent.setDataAndType(Uri.parse(filepath), "application/xls");
+                                                intent.setDataAndType(Uri.parse(filepath), "application/vnd.ms-excel");
                                                 intent = Intent.createChooser(intent, "Open File");
                                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                                 startActivity(intent);
@@ -271,6 +298,16 @@ public class MainActivity extends AppCompatActivity {
 
                             }
 
+                        }
+                        if (url.startsWith("blob:")) {
+                            String s = url.replace("blob:","");
+                            //try {
+                            //    //URLDecoder.decode( s, "UTF-8" );
+                            //    //webView.loadUrl(URLDecoder.decode( s, "UTF-8" ));
+                            //    //webView.setWebChromeClient(new MyWebChromeClient());
+                            //} catch (UnsupportedEncodingException e) {
+                            //    e.printStackTrace();
+                            //}
                         }
                     }
                 });
@@ -379,6 +416,27 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onPageFinished(WebView view, String url) {
+            //
+            if(url.equals("http://facturasff.com/Agenda/Medico") || url.equals("http://facturasff.com/Account/LogOn?ReturnUrl=%2f")){
+
+                new android.os.Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        injectCSS();
+                        SplashLayout.animate()
+                        .translationY(0)
+                        .alpha(0.0f)
+                        .setDuration(500)
+                        .setListener(new AnimatorListenerAdapter() {
+                            @Override
+                            public void onAnimationEnd(Animator animation) {
+                                super.onAnimationEnd(animation);
+                                SplashLayout.setVisibility(View.GONE);
+
+                            }
+                        });
+                    }
+                },4000);
+            }
             super.onPageFinished(view, url);
         }
     }
@@ -393,6 +451,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    private void injectCSS() {
+        try {
+            InputStream inputStream = getAssets().open("style.css");
+            int bufferSize = 1024;
+            byte[] buffer = new byte[inputStream.available()];
+            inputStream.read(buffer);
+            inputStream.close();
+            String encoded = Base64.encodeToString(buffer, Base64.NO_WRAP);
+            webView.loadUrl("javascript:(function() {" +
+                    "var parent = document.getElementsByTagName('head').item(0);" +
+                    "var style = document.createElement('style');" +
+                    "style.type = 'text/css';" +
+                    "style.innerHTML = window.atob('" + encoded + "');" +
+                    "parent.appendChild(style)" +
+                    "})()");
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
 
     }
+}
 
