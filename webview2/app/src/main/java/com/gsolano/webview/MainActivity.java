@@ -8,6 +8,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -197,20 +198,30 @@ public class MainActivity extends AppCompatActivity {
                                             fos.write(decodedString);
                                             fos.close();
 
-
-
                                             Intent intent;
                                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                                                String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
                                                 File storageDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
                                                 File imagePath = new File(storageDir, "");
                                                 File image = new File(imagePath, filename);
 
                                                 Uri photoUri = FileProvider.getUriForFile(MainActivity.this, getPackageName() +".provider", image);
+                                                PackageManager packageManager = getPackageManager();
                                                 intent = new Intent(Intent.ACTION_VIEW);
                                                 intent.setData(photoUri);
                                                 intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                                                startActivity(intent);
+                                                //startActivity(intent);
+                                                intent = Intent.createChooser(intent, "Open File");
+                                                List list = packageManager.queryIntentActivities(intent,PackageManager.MATCH_DEFAULT_ONLY);
+
+                                                if (list.size() > 0) {
+                                                    try {
+                                                        startActivity(intent);
+                                                    } catch (ActivityNotFoundException e) {
+                                                        Toast.makeText(MainActivity.this, "Application not found", Toast.LENGTH_SHORT).show();
+                                                    }
+                                                }else{
+                                                    Toast.makeText(MainActivity.this, "No exiten aplicaciones para abrir el archivo", Toast.LENGTH_SHORT).show();
+                                                }
                                             } else {
                                                 intent = new Intent(Intent.ACTION_VIEW);
                                                 intent.setDataAndType(Uri.parse(filepath), "application/pdf");
@@ -240,12 +251,8 @@ public class MainActivity extends AppCompatActivity {
                                             FileOutputStream fos = new FileOutputStream(myExternalFilexsl);
                                             fos.write(decodedString);
                                             fos.close();
-
-
-
                                             Intent intent;
                                             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                                                String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
                                                 File storageDir = getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
                                                 File imagePath = new File(storageDir, "");
                                                 File image = new File(imagePath, filenameExcel);
@@ -269,16 +276,6 @@ public class MainActivity extends AppCompatActivity {
                                                 }else{
                                                     Toast.makeText(MainActivity.this, "No exiten aplicaciones para abrir el archivo", Toast.LENGTH_SHORT).show();
                                                 }
-                                               /* intent = new Intent(Intent.ACTION_VIEW);
-                                                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                                intent.setDataAndType(photoUri, "application/vnd.ms-excel");
-                                                intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                                                try {
-                                                    startActivity(intent);
-                                                } catch (ActivityNotFoundException e) {
-                                                    Toast.makeText(MainActivity.this, "Application not found", Toast.LENGTH_SHORT).show();
-                                                }*/
-
                                             } else {
                                                 intent = new Intent(Intent.ACTION_VIEW);
                                                 intent.setDataAndType(Uri.parse(filepath), "application/vnd.ms-excel");
@@ -300,7 +297,7 @@ public class MainActivity extends AppCompatActivity {
 
                         }
                         if (url.startsWith("blob:")) {
-                            String s = url.replace("blob:","");
+                            //String s = url.replace("blob:","");
                             //try {
                             //    //URLDecoder.decode( s, "UTF-8" );
                             //    //webView.loadUrl(URLDecoder.decode( s, "UTF-8" ));
@@ -395,9 +392,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     public class MyWebViewClient extends WebViewClient {
+
+
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
             //Al dar clic en un link se obligará a cargar dentro del WebView.
-            Log.e("url", url);
             view.loadUrl(url);
             return true;
         }
@@ -406,18 +404,15 @@ public class MainActivity extends AppCompatActivity {
         @Nullable
         @Override
         public WebResourceResponse shouldInterceptRequest(WebView view, WebResourceRequest request) {
-            //return
             WebResourceResponse returnResponse = null;
             if ((request).equals("http://facturasff.com/FacturaElectronica/FacturarFE")) {
-                Log.i("tag", "shouldInterceptRequest path:" + request.getUrl().getPath());
             }
             return super.shouldInterceptRequest(view, request);
         }
 
         @Override
         public void onPageFinished(WebView view, String url) {
-            //
-            if(url.equals("http://facturasff.com/Agenda/Medico") || url.equals("http://facturasff.com/Account/LogOn?ReturnUrl=%2f")){
+            if(url.equals("http://facturasff.com/Agenda/Medico") || url.startsWith("http://facturasff.com/Account/LogOn")){
 
                 new android.os.Handler().postDelayed(new Runnable() {
                     public void run() {
@@ -435,7 +430,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
                     }
-                },4000);
+                },2000);
             }
             super.onPageFinished(view, url);
         }
