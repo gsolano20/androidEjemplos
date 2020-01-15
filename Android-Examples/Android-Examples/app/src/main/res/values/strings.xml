@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">MyFramework</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_translate_from">Translate from : </string>
+    <string name="title_translate_to">To : </string>
+    <string name="hint_enter_text">Enter text</string>
+    <string name="hint_translation">Translation</string>
+    <string name="action_translate">Translate</string>
+    <string name="title_translator">Translator</string>
+    <string name="title_activity_images_slider">ImagesSliderActivity</string>
+    <string name="title_show_images_slider">Show Images Slider</string>
+    <string name="title_spanny">Spanny</string>
+    <string name="title_activity_spanny">SpannyActivity</string>
+    <string name="title_activity_notification_badge">NotificationBadge</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="drawer_item_home">Homes</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="title_activity_youtube_player">YoutubePlayerActivity</string>
+    <string name="title_activity_many_image_views">ManyImageViews</string>
+    <string name="title_activity_custom_toolbar">CustomToolbar</string>
+    <string name="title_activity_firebase_user_profile">FirebaseUserProfileActivity</string>
+
+    <string name="pref_show_first_name_key">show_first_name</string>
+    <string name="pref_show_false">Hidden</string>
+    <string name="pref_show_true">Shown</string>
+    <string name="pref_show_first_name_title">Show First Name</string>
+    <string name="pref_show_last_name_key">show_last_name</string>
+    <string name="pref_show_last_name_title">Show Last Name</string>
+    <string name="pref_city_name_title">City</string>
+    <string name="pref_city_name_key">city_name</string>
+    <string name="pref_city_name_default">Gaza</string>
+    <string name="pref_notification_key">notification</string>
+    <string name="pref_notification_inactive">InActive</string>
+    <string name="pref_notification_title">Notification</string>
+    <string name="pref_system_sync_settings_title">System Sync Settings</string>
+    <string name="pref_ringtone_title">Ringtone</string>
+    <string name="pref_notification_active">Active</string>
+
+
+    <string name="pref_color_label">Shape Color</string>
+    <string name="pref_color_label_red">Red</string>
+    <string name="pref_color_label_blue">Blue</string>
+    <string name="pref_color_label_green">Green</string>
+    <string name="pref_color_key" translatable="false">color</string>
+    <string name="pref_color_red_value" translatable="false">red</string>
+    <string name="pref_color_blue_value" translatable="false">blue</string>
+    <string name="pref_color_green_value" translatable="false">green</string>
+    <string name="title_btn_notification_badge">Notification Badge</string>
+    <string name="title_btn_drawer_activity">Drawer Activity</string>
+    <string name="title_btn_material_drawer_activity">Material Drawer Activity</string>
+    <string name="title_btn_youtube_player_activity">Youtube Player Activity</string>
+    <string name="title_btn_many_imageviews">Many ImageViews</string>
+    <string name="title_btn_custom_toolbar">Custom Toolbar</string>
+    <string name="title_btn_auth_with_firebase_ui">Auth With Firebase UI</string>
+    <string name="title_btn_settings_activity">Settings Activity</string>
+    <string name="title_btn_sqlite_activity">SQLite Activity</string>
+    <string name="title_btn_recyclerview_activity">RecyclerView Activity</string>
+    <string name="title_activity_sqlite">SqliteActivity</string>
+
+
+    <string name="default_guest_name">[Guest name]</string>
+    <string name="default_party_size">\?</string>
+    <string name="hint_guest_name">Guest name</string>
+    <string name="hint_party_size">Party size (max 99)</string>
+    <string name="text_add_button">ADD</string>
+    <string name="title_btn_second_recycler_view">Second RecyclerView Adapter</string>
+    <string name="title_btn_content_resolver">Content Resolver</string>
+    <string name="title_activity_content_resolver">ContentResolverActivity</string>
+    <string name="show_definition">Show Definition</string>
+    <string name="text_btn_show_definition">Show Definition</string>
+    <string name="text_btn_fetch_next_word">Fetch Next Word</string>
+    <string name="hint_fake_profile_info">Username: Abdallah Murad   \n\nEmail: Abdallah.Murad@mail.com   \n\nIdToken: 53435as4d35agasd4da5s6d4a5sd4as56as4d5  \n\nPhotoUrl:https://www.google.com/abdallah/profile.png</string>
+    <string name="title_user_name">Abdallah Murad</string>
+    <string name="title_user_email">Abdallah.Murad@Mail.com</string>
+    <string name="title_home">Home</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_extra">Extra</string>
+    <string name="title_btn_content_provider">Content Provider</string>
+    <string name="title_btn_async_task_loader">AsyncTaskLoader</string>
+    <string name="title_btn_maps">Maps</string>
+    <string name="title_btn_maps_intent">Intent Map</string>
+
+
+    <string name="pref_location_default" translatable="false">Mountain View, CA 94043</string>
+    <string name="title_btn_room">Room</string>
+    <string name="title_background_services">Background Services</string>
+    <string name="title_notification">Notification</string>
+    <string name="title_btn_jobs_scheduler">Jobs Scheduler</string>
+    <string name="title_btn_broadcast_receiver">Broadcast Receiver</string>
+    <string name="title_btn_bottom_navigation_view">BottomNavigationView</string>
+    <string name="no_internet_message">No Enternet</string>
+    <string name="retry">Retry</string>
+    <string name="title_btn_data_binding">Data Binding</string>
+    <string name="title_activity_data_binding">DataBindingActivity</string>
+
+
+    <!--Flight Data Strings-->
+    <string name="passenger_label">PASSENGER</string>
+    <string name="passenger_name">MR. JAMES BOND</string>
+    <string name="origin_code">SFO</string>
+    <string name="destination_code">LAX</string>
+    <string name="flight_code">UDA 2465</string>
+    <string name="boarding_time_label">BOARDING TIME</string>
+    <string name="boarding_time">02:10 PM</string>
+    <string name="departure_time_label">DEPARTURE</string>
+    <string name="departure_time">02:40 PM</string>
+    <string name="arrival_time">12:40 AM</string>
+    <string name="arrival_time_label">ARRIVAL</string>
+    <string name="boarding_in_time">00:15</string>
+    <string name="boarding_in_label">BOARDING IN</string>
+    <string name="terminal_label">TERMINAL</string>
+    <string name="gate_label">GATE</string>
+    <string name="seat_label">SEAT</string>
+    <string name="terminal">2</string>
+    <string name="gate">58B</string>
+    <string name="seat">24A</string>
+    <string name="countDownFormat">%1$02d:%2$02d</string>
+    <string name="timeFormat">hh:mm a</string>
+    <string name="title_btn_Icepick">Icepick</string>
+    <string name="title_btn_runtime_permissions">Run Time Permissions</string>
+    <string name="title_btn_schematic">Schematic</string>
+    <string name="title_btn_date_display_logic">Date Diplay Logic</string>
+    <string name="notification_channel_name">hot_channel_005</string>
+    <string name="snooze">Snooze</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_include_tag_data_binding">IncludeTagDataBindingActivity</string>
+
+
+
+
+    <string name="toolbar_profile">Profile</string>
+    <string name="posts">POSTS</string>
+    <string name="followers">FOLLOWERS</string>
+    <string name="following">FOLLOWING</string>
+    <string name="title_btn_exo_player">Exo Player</string>
+
+
+</resources>

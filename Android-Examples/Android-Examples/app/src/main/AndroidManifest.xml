@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.am.framework">
+
+    <!-- Allow Applications To Open Network Sockets -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Allow Applications To Access Information About Networks -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission For The DroidTermsExample.apk ConSplashActivitytent Provider -->
+    <uses-permission android:name="com.example.udacity.droidtermsexample.TERMS_READ" />
+
+    <!-- if the device does not have this feature the app will not be installed -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- launchMode="singleTop" Will ReLunch The Activity if it exists rather than creating a new one -->
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_cheer_active"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_cheer_active"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SplashTheme">
+
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ImagesSliderActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.NotificationBadgeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SpannyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.YendexTranslateActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.MaterialDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- ConfigChanges : used to Keep Up with The Changes like orientation without Losing unSaved Data -->
+        <activity
+            android:name=".activity.YoutubePlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:label="@string/title_activity_youtube_player"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManyImageViewsActivity"
+            android:label="@string/title_activity_many_image_views"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.CustomToolbarActivity"
+            android:label="@string/title_activity_custom_toolbar"
+            android:theme="@style/NoActionBarNoStatusBarTheme" />
+        <activity
+            android:name=".activity.FirebaseUserProfileActivity"
+            android:label="@string/title_activity_firebase_user_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.SQLiteActivity"
+            android:label="@string/title_activity_sqlite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <!-- Uses A Custom Theme @style/AppTheme.Template.Base -->
+        <activity
+            android:name=".activity.SecondRecyclerAdapterActivity"
+            android:theme="@style/AppTheme.Template.Base" />
+        <activity
+            android:name=".activity.ContentResolverActivity"
+            android:label="@string/title_activity_content_resolver"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.MapsActivity" />
+        <activity android:name=".activity.AsyncTaskLoaderActivity" />
+        <activity
+            android:name=".activity.DataBindingActivity"
+            android:label="@string/title_activity_data_binding"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.NotificationActivity" />
+
+        <receiver android:name=".broadcasts.MyBroadcastReceiver" />
+
+        <activity
+            android:name=".activity.IncludeTagDataBindingActivity"
+            android:label="@string/title_activity_include_tag_data_binding"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

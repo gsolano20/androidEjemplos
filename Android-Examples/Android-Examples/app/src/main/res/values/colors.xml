@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#111111</color>
+    <color name="colorAccent">#fecb2f</color>
+
+    <color name="red">#E82624</color>
+
+    <color name="black_alpha_60">#66000000</color>
+    <color name="white_alpha_DD">#DDffffff</color>
+    <color name="white">#ffffff</color>
+
+
+    <color name="colorPrimaryLight">#EDE7F6</color>
+    <color name="colorSecondary">#FFC107</color>
+    <color name="grey">#ece9e9</color>
+
+
+    <color name="colorGood">#4CAF50</color>
+    <color name="colorBad">#F44336</color>
+
+
+    <color name="profile_meta">#333</color>
+
+
+</resources>

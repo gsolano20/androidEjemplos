@@ -1,0 +1,53 @@
+<resources>
+    <dimen name="badge_text_size">12dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+
+    <!-- text size -->
+    <dimen name="heading_text_size">20sp</dimen>
+    <dimen name="text_size_expanded_title">22sp</dimen>
+    <dimen name="text_size_expanded_title_large">27sp</dimen>
+    <dimen name="text_size_extra_large">32sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_very_large">42sp</dimen>
+
+    <!-- margin specifics -->
+    <dimen name="layout_margin_extra_small">2dp</dimen>
+    <dimen name="layout_margin_small">6dp</dimen>
+    <dimen name="layout_margin_medium">8dp</dimen>
+    <dimen name="layout_margin_moderate">10dp</dimen>
+    <dimen name="layout_margin_large">16dp</dimen>
+    <dimen name="layout_margin_extra_large">32dp</dimen>
+
+    <!-- padding specifics -->
+    <dimen name="padding_extra_small">2dp</dimen>
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_extra_large">32dp</dimen>
+    <dimen name="padding_payment">12dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">16dp</dimen>
+    <dimen name="item_image_view_large">16dp</dimen>
+
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="profile_image">100dp</dimen>
+    <dimen name="fab_profile">30dp</dimen>
+    <dimen name="profile_name">15dp</dimen>
+    <dimen name="profile_about">13dp</dimen>
+    <dimen name="profile_meta">24dp</dimen>
+    <dimen name="profile_meta_label">10dp</dimen>
+
+
+
+</resources>
