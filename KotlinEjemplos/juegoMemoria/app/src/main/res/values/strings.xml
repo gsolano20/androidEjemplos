@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">juegoMemoria</string>
+
+    <!--Main-->
+    <string name="Jugador1">Jugador1</string>
+    <string name="Jugador2">Jugador2</string>
+</resources>

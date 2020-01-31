@@ -6,7 +6,100 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="291502b7-800e-4efd-a9f7-825f67e7538e" name="Default Changelist" comment="" />
+    <list default="true" id="291502b7-800e-4efd-a9f7-825f67e7538e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Futbol/ApiFutbol.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Futbol/FutbolActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Futbol/FutbolAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Futbol/Partido.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Futbol/Resultados.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Tiempo/ApiTiempo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Tiempo/Meteorologia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Tiempo/Tiempo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Tiempo/TiempoActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Tiempo/TiempoAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/java/com/gsolano/retrofit2/Tiempo/TiempoDiario.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/res/layout/activity_futbol.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/res/layout/activity_tiempo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/res/layout/list_item_resultados.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/Retrofit2/app/src/main/res/layout/list_item_tiempo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/drawable/ic_bike.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/drawable/ic_boat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/drawable/ic_box_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/drawable/ic_car.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/drawable/ic_flight.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/drawable/ic_railway.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/juegoMemoria/app/src/main/res/layout/cartas_imagen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/.idea/render.experimental.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/java/com/gsolano/recyclerviewkt/Constant.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/java/com/gsolano/recyclerviewkt/Muro.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/java/com/gsolano/recyclerviewkt/MuroAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/java/com/gsolano/recyclerviewkt/PostActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/drawable/ic_alberto.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/drawable/ic_bike.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/drawable/ic_cafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/drawable/ic_cake.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/drawable/ic_marcos.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/drawable/ic_victoria.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/layout/activity_post.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/layout/list_item_muro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../KotlinEjemplos/recyclerView/app/src/main/res/layout/list_item_muro_fech.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/render.experimental.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/androidTest/java/com/gsolano/myapplication/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/java/com/gsolano/myapplication/AccesoOkActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/java/com/gsolano/myapplication/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/java/com/gsolano/myapplication/SistemaOperativo.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/layout/activity_acceso_ok.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/app/src/test/java/com/gsolano/myapplication/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinEjemplo/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +143,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="40" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -69,7 +167,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/EtiquetasFlotantes/EtiquetasFlotantes" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,7 +180,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="699" />
@@ -90,13 +188,21 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lotie" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,9 +272,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -270,11 +379,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16414523" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.48411497" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -312,12 +421,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/assets/lotiefile">
       <provider selected="true" editor-type-id="text-editor">

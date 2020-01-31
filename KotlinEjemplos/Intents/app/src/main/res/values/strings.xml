@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- Main Activity strings-->
+    <string name="intro_edad">Introduce tu edad</string>
+    <string name="enviar">Enviar</string>
+
+
+    <!-- AccesoOk Activity strings-->
+    <string name="edad">Edad</string>
+
+    <!--No  AccesoOk Activity strings-->
+    <string name="no_tienes_edad">No tienes edad</string>
+    <string name="tienes_que_ser_mayor">Tienes que ser mayor de 18 años</string>
+</resources>
