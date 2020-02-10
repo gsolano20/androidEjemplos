@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">MaterialTabsWithMenu</string>
-    <string name="toolbar_title">Music</string>
-    <string name="tab_item_0">LIBRARY</string>
-    <string name="tab_item_1">PLAYLIST</string>
+    <string name="app_name">GNOTES</string>
+    <string name="toolbar_title">Notes</string>
+    <string name="tab_item_0">Respaldo</string>
+    <string name="tab_item_1">PROFILE</string>
     <string name="tab_item_2">FAVORITES</string>
     <string name="tab_item_3">HOME</string>
+    <string name="tab_item_4">New Nota</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_note">Notes</string>
+    <string name="CloseNewNote">X</string>
 </resources>

@@ -1,17 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/item_home"
     android:background="@color/colorWhite">
 
-    <TextView
+    <ListView
+
+        android:id="@+id/homelistNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="14dp"
+        android:layout_marginTop="16dp"
+        android:divider="@null"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+
+
+        >
+
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/LayoutNewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/titlenewNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/tab_item_3"
-        android:textColor="@color/colorTitle"
-        android:textSize="15dp"
-        android:textStyle="bold" />
+        android:text="@string/new_note"
+        android:textSize="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/CloseNewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CloseNewNote"
+            android:textSize="30dp"
+
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"/>
+        <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NoteTitle"
+            android:hint="Title"
+            android:layout_below="@id/titlenewNote"
+        android:layout_margin="20dp"/>
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NoteText"
+            android:hint="Note"
+            android:layout_below="@id/NoteTitle"
+        android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:text="Save Note"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:tint="@color/colorWhite"
+            android:layout_below="@id/NoteText"
+            android:layout_margin="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+            android:text="Update Note"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:tint="@color/colorWhite"
+            android:layout_margin="20dp"
+            android:layout_below="@id/NoteText"
+            android:visibility="gone"/>
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/plus"
+        android:tint="@color/colorWhite"
+        app:borderWidth="0dp"
+        app:fabSize="auto" />
 
 </RelativeLayout>

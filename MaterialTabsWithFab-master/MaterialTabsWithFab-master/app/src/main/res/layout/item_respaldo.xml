@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+
+
+
+    <TextView
+        android:id="@+id/titletab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tab_item_0"
+        android:textColor="@color/colorTitle"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnExportData"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/titletab"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="Export Data"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:tint="@color/colorWhite"/>
+    <Button
+        android:id="@+id/btnImportData"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/btnExportData"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="Import Data"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:tint="@color/colorWhite"/>
+
+</RelativeLayout>
