@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BaseballUI</string>
+
+    <string name="IntroBienvenido">Bienvenido</string>
+    <string name="IntroFruta">Disfruta</string>
+    <string name="IntroRedsocial">Redsocial</string>
+
+
+    <string name="IntroDescBienvenido"> a la mejor app de baseball</string>
+    <string name="IntroDescFruta">de resultados en tiempo real</string>
+    <string name="IntroDescRedsocial">con tus jugadores favoritos</string>
+
+    <string name="saltar">saltar</string>
+
+
 </resources>
